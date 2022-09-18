@@ -5,5 +5,5 @@
 - Guards
 - Lookup types
 - keyof
-- mapped types
-- mapped types modifiers
+- Mapped types
+- Mapped types modifiers
