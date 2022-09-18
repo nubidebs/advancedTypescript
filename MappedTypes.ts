@@ -42,7 +42,10 @@ export type ReadonlyPoint = {
     readonly [Key in 'x' | 'y']: Point[Key]
 }
 
-/* We could also write it more generic  (reusable) 
+/* We could also write it more generic  (reusable) combining
+- mapped types
+- keyof
+- generics
 
 export type Readonly<T> = {
     readonly [Key in T]: T[Key]
