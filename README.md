@@ -7,3 +7,5 @@
 - keyof
 - Mapped types
 - Mapped types modifiers
+- Generics for functions
+
