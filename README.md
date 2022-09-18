@@ -5,3 +5,4 @@
 - Guards
 - Lookup types
 - keyof
+- mapped types
