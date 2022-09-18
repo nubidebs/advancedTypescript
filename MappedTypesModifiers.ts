@@ -49,7 +49,7 @@ export class State<T> {
 
 const state = new State({ x: 0, y: 0})
 
-// type Partial<T> on line 45 is a mapped type with keyof, generics and ? modifier
-// which allows us to update only the 'y' property without throwing an error for the missing 'x'
+// type Partial<T> on line 45 is a mapped type with keyof, generics and ? modifier which makes all properties optional.
+// It allows us to update only the 'y' property without throwing an error for the missing 'x'
 state.update({ y: 123}) 
 console.log(state.current)
