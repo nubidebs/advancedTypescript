@@ -23,7 +23,7 @@ const deb: Person =logAccess({
     name: 'Deb',
     age: '18',
     location: 'Rome'
-   }, "ages") // ERROR HERE
+   }, "ages") // --------> ERROR HERE
 
 */
 
@@ -50,13 +50,14 @@ function logAccess<T>(object: T, key: keyof T): T {
 }
 
 
-const deb: Person =logAccess({
+const deb: Person =logAccessManualEntries({
     name: 'Deb',
-    age: '18',
+    age: 18,
     location: 'Rome'
-   }, "age")
+   }, 'age')
 
-
-   
-deb.age = deb.age + 1
+const todo = logAccess({
+    id: 1,
+    text: 'Buy milk'
+}, 'text')
 
